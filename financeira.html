@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
+    <link rel="stylesheet" href="maths.css">
+        
+    <style>
+    html,body{height:100%;margin:0}
+    .topbar{height:156px;background:lightgreen;display:flex;align-items:center;padding:0 16px}
+    .topbar a{color:#000;text-decoration:none;font-weight:700}
+    .frame-wrap{display:flex;flex-direction:column;height:100vh}
+    .frame-wrap .frame { flex:1;border:0;width:100%;height:100% }
+    .loader { padding:16px; }
+  </style>
+    <title>Trabalho de Matematica 11º Inforgest</title>
+</head>
+<body>
+   <nav class="nav-bar" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a class="brand" href="./maths.html">Calculadora</a>
+            <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a role="menuitem" href="maths.html">Científica</a></li>
+                <li role="none"><a role="menuitem" href="financeira.html">Financeira</a></li>
+                <li class="dropdown" role="none">
+                    <button class="drop-btn" aria-haspopup="true" aria-expanded="false">Análise de Balanço ▾</button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="none"><a role="menuitem" href="b-patrimonial.html">Balanço Patrimonial</a></li>
+                        <li role="none"><a role="menuitem" href="b-sintetico.html">Balanço Sintético</a></li>
+                        <li role="none"><a role="menuitem" href="b-analitico.html">Balanço Analítico</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" role="none">
+                    <button class="drop-btn" aria-haspopup="true" aria-expanded="false">Sucessões ▾</button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="none"><a role="menuitem" href="s-ortogonometricas.html">Ortogonometricas</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="frame-wrap">
+        <iframe src="./financial-calculator/index.html" frameborder="0" id="fin-frame" class="frame" title="Financeira calculadora"></iframe>
+        <div id="status" class="loader" aria-live="polite" hidden>Carregando aguarde <img src="" alt=""></div>
+    </div>
+    
+    <div class="calculator-about">
+
+        <h2 id="cont">Tabela de conteudos</h2>
+        <ul class="lista-con">
+        <li><label><a href="#TVM">Tempo de Valor Monetario (TVM)</a></label></li>
+        <li><label><a href="#PMT">PMT</a></label></li>
+        <li><label><a href="#aulas">Aulas de Financas</a></label></li>
+        <li><label><a href="#importance">A Importancia da calculadora financeira</a></label></li>
+        </ul>
+
+        <div class="calculator-about_wrapper">
+
+        <h2 id="#TVM" style="text-align: center;">Valor do Dinheiro no Tempo (TMV)</h2>
+
+        <p>Imagine que alguém lhe deve R$ 500. Você prefere receber esse dinheiro de uma só vez agora ou em quatro parcelas ao longo de um ano? E se você tivesse que esperar o pagamento inteiro em vez de receber tudo de uma vez? Você acha que o atraso no pagamento custa algo?</p>
+        <p>Você provavelmente vai querer todo o dinheiro rapidamente por causa do conceito de “valor do dinheiro no tempo”. A noção de “valor do dinheiro no tempo” afirma que um dólar possuído hoje é mais valioso do que um dólar prometido no futuro. Você pode usá-lo para muitos propósitos pessoais diferentes.</p>
+        <p>O dinheiro colocado em uma conta poupança rende um pequeno dividendo como recompensa por ser mantido em depósito no banco. A instituição financeira paga uma pequena taxa para ter esse dinheiro em mãos. Como resultado, o banco pagará um prêmio por depósitos de longo prazo e compromissos de prazo fixo.
+
+</p>
+        <p>O termo “valor futuro” em finanças refere-se ao valor monetário aumentado no final de um período em que rende juros.
+
+</p>
+        <p>Quanto dinheiro você pode economizar se colocar R$ 100 (PV) em uma conta de investimento que paga 10% ao ano? Daqui a um ano, quanto dinheiro haverá? Quanto é R$ 110? (FV). Esses R$ 110 representam a soma dos R$ 100 originais mais R$ 10 de juros ou R$ 110 no total.
+
+</p>
+        <p>Cem reais investidos a uma taxa de juros anual de 10% valerão R$ 110 em um ano, portanto, investir R$ 100 agora valerá R$ 110 em um ano.
+
+</p>
+        <p>Um real investido a uma taxa de juros r por algum tempo crescerá até a soma de (1 + r). R é 10% neste caso, o que significa que o investimento aumenta para:
+
+</p>
+        <p>Um real investido a uma taxa de juros r por algum tempo crescerá até a soma de (1 + r). R é 10% neste caso, o que significa que o investimento aumenta para:
+
+</p>
+        <p>Por real investido, você recebe R$ 1.10 de volta. O resultado, ou FV, é o seguinte porque R$ 100 foram investidos neste caso:
+
+</p>
+        <p>R$ 100 × 1,10 = R$ 110
+
+</p>
+        <p>O investimento inicial de R$ 100 agora cresceu para R$ 110. Após dois anos, se a taxa de juros for a mesma, qual será o FV se o dinheiro for mantido na caderneta de poupança?
+
+</p>
+        <p>R$ 110 × 0,10 = R$ 11
+
+</p>
+        <p>Juros de R$ 11 serão ganhos no segundo ano, elevando o total para:
+
+</p>
+        <p>R$ 110 + R$ 11 = R$ 121
+
+</p>
+        <p>Se a taxa de juros permanecer constante em 10% ao ano, R$ 100 valerão R$ 121 em dois anos.
+
+</p>
+        <p>O PV também é o valor do FV se uma taxa de desconto for aplicada. Tem o mesmo significado que uma taxa de juros, mas é usado para trás no tempo (em vez de para frente). Um FV de R$ 121 com uma taxa de desconto de 10% tem um PV de R$ 100 após dois períodos compostos (N).
+
+</p>
+        <p>Em termos de dinheiro, existem vários componentes para este FV de R$ 121.
+
+</p>
+
+        <ul>
+        <li>Os primeiros R$ 100 do principal inicial, ou seu Valor Presente, são incluídos neste cálculo (PV)
+</li>
+        <li>O segundo componente é R$ 10 em juros ganhos no ano um.
+</li>
+        <li>A terceira parte dos juros restantes de R$ 10 do segundo ano.
+</li>
+        <li>O quarto componente é R$ 1, que representa os juros cobrados no segundo ano sobre os juros pagos no primeiro: (R$ 10 × 0,10 = R$ 1).
+</li>
+        </ul>
+
+    <h2 style="margin-bottom:16px;">PMT</h2>
+        <p>Uma entrada ou saída de fundos no final de cada período de um fluxo financeiro é chamado de PMT (pagamento periódico). Considere uma propriedade de aluguel de R$ 1.000 por mês que gera fluxo de caixa recorrente. É normal que os investidores ponderem quanto valem R$ 1.000 por mês em fluxo de caixa. Não está claro se eles deveriam gastar tanto dinheiro em um imóvel alugado.</p>
+        <p>Que tal um negócio de R$ 100 por ano? E o pagamento inicial de R$ 30.000 e o pagamento mensal da hipoteca de R$ 1.000? Nossa Calculadora Financeira pode ajudar a analisar esses cenários incluindo a função PMT.</p>
+        <p>Insira as informações corretas e indique se os pagamentos são feitos no início ou no final dos períodos compostos. Isso tem um impacto significativo no montante total dos juros pagos.</p>
+
+    <h2 style="margin-top:35px;">A importância da calculadora financeira</h2>
+        <p>A importância da calculadora financeira reside, primariamente, em sua capacidade de transformar complexidade em clareza.</p>
+        <p>Ela é uma ferramenta indispensável para a análise do valor do dinheiro no tempo, uma premissa fundamental em todas as áreas de finanças. Ao automatizar cálculos de juros compostos, taxas de retorno, amortização de dívidas e fluxos de caixa, ela permite que profissionais e indivíduos avaliem o custo real de um financiamento ou o retorno potencial de um investimento de forma rápida e precisa, eliminando a margem de erro que cálculos manuais apresentariam.</p>
+        <p>Além da velocidade, o valor central da calculadora é o apoio à tomada de decisão informada. Ela permite que o usuário simule diversos cenários financeiros, alterando variáveis como a taxa de juros (i), o prazo (n) ou o valor da parcela (PMT), para determinar o impacto dessas mudanças no Valor Presente (PV) e no Valor Futuro (FV) de uma operação.</p>
+        <p>Essa capacidade de modelagem é crítica para a viabilidade de projetos empresariais, o planejamento de aposentadoria e a escolha entre diferentes produtos financeiros disponíveis no mercado.</p>
+        <p>Por fim, a calculadora financeira atua como um padrão de produtividade e comunicação no mundo corporativo e acadêmico.</p>
+        <p>Ela agiliza processos que, de outra forma, consumiriam horas de trabalho manual ou exigiriam planilhas complexas, permitindo que o foco se desloque do cálculo em si para a análise dos resultados.</p>
+        <p>Assim, ela se estabelece como um recurso obrigatório para qualquer pessoa que deseje gerenciar ou estudar finanças com eficiência, garantindo que as decisões sejam fundamentadas em dados exatos e rapidamente disponíveis.</p>
+     </div>
+    </div>
+
+    <footer>&copy; Grup Nº1 Inforgest</footer>
+    <script src="financeira.js"></script>
+    <script src="nav.js"></script>
+</body>
+</html>
